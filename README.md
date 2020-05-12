@@ -1,2 +1,2 @@
-# This is my CV page
-ioait.github.io
+# THIS IS MY PAGE
+
