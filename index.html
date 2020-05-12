@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sergey Yugay</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+		<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css"> -->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="avatar"><img src="images/avatar.png" alt="" /></span>
+						<h1><strong>Hi!</strong>, my names is Sergey. Welcome to my page!<br />
+						Here will be information about me</h1>
+						<ul class="icons">
+			                <li class="pure-menu-item"><a href="tabs/skills.html" class="pure-menu-link">Skills</a></li>
+			                <li class="pure-menu-item"><a href="tabs/projects.html" class="pure-menu-link">Projects</a></li>
+			                <li class="pure-menu-item"><a href="tabs/certificated.html" class="pure-menu-link">Certificated</a></li>
+		                </ul>
+		                <br/>
+		                <h1>You can <strong>reach</strong> me at</h1>
+						<ul class="icons">
+							<li><a href="https://t.me/goodyonz" class="icon style2 fab fa-telegram-plane"><span class="label">Telegram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sergey-yugay" class="icon style2 fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ioaiy" class="icon style2 fab fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:dsyugay@gmail.com" class="icon style2 fab fa-google"><span class="label">Email</span></a></li>
+						</ul>
+						
+					</header>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>If you want to live your life as planned work on yourself</p>
+					</footer>
+					
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script> 
+		      $(document).ready(function(){
+		       var body = $("body");
+		       body.fadeIn(600);
+		       $(document).on("click", "a:not([href^='#']):not([href^='skills.html']):not([href^='projects.html']):not([href^='certificated.html'])", function(e) {
+		        e.preventDefault();
+		        $("body").fadeOut(600);
+		        var self = this;
+		        setTimeout(function () {
+		         window.location.href = $(self).attr("href");
+		        }, 600);
+		       });
+		      });
+		    </script>
+			
+	</body>
+</html>

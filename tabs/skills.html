@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Skills</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="avatar"><img src="../images/avatar.png" alt="" /></span>
+
+						<h1><strong>Skills</strong> & <strong>Technologies</strong></h1>
+						
+						<ul id="skills-style" class="icons">
+			                <li class="pure-menu-item"><a href="../index.html" class="pure-menu-link">Home</a></li>
+			                <li class="pure-menu-item"><a href="projects.html" class="pure-menu-link">Projects</a></li>
+			                <li class="pure-menu-item"><a href="certificated.html" class="pure-menu-link">Certificated</a></li>
+		                </ul>
+		                
+						
+					</header>
+
+				<!-- Main -->
+				<section id="main">
+
+					<!-- Content -->
+						<section>
+							<div class="skills-table">
+					          <table class="table-wrapper">
+					            <tbody>
+					              <tr>
+					                <th><h2>Language</h2></th>
+					                <th><h2>Server Side Language</h2></th>
+					                <th><h2>Frameworks</h2></th>
+					                <th><h2>Database</h2></th>
+					                <!-- <th><h2>Toolkit</h2></th> -->
+					              </tr>
+					              <tr>
+					                <td>Russian</td>
+					                <td>Python</td>
+					                <td>Django</td>
+					                <td>PostgreSQL</td>
+					                <!-- <td>Git</td> -->
+					              </tr>
+					              <tr>
+					                <td>English</td>
+					                <th></th>
+					                <td>Flask</td>
+					                <th></th>
+					                <!-- <td>HTML</td> -->
+					              </tr>
+					              <tr>
+					                <th></th>
+					                <th></th>
+					                <td>Beautiful Soup</td>
+					                <th></th>
+					                <!-- <td>CSS</td> -->
+					              </tr>
+					              <tr>
+					                <th></th>
+					                <th></th>
+					                <td>Selenium</td>
+					                <th></th>
+					                <!-- <td></td> -->
+					              </tr>
+					            </tbody>
+					          </table>
+					        </div>
+						</section>
+
+				</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>If you want to live your life as planned work on yourself</p>
+					</footer>
+					
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script> 
+		      $(document).ready(function(){
+		       var body = $("body");
+		       body.fadeIn(600);
+		       $(document).on("click", "a:not([href^='index.html']):not([href^='#']):not([href^='tabs/projects.html']):not([href^='tabs/certificated.html'])", function(e) {
+		        e.preventDefault();
+		        $("body").fadeOut(600);
+		        var self = this;
+		        setTimeout(function () {
+		         window.location.href = $(self).attr("href");
+		        }, 600);
+		       });
+		      });
+		    </script>
+			
+
+	</body>
+</html>
